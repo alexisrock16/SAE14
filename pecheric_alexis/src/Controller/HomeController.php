@@ -54,8 +54,20 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     } 
+
     
+    /**
+     * @Route("/leportfolio", name="leportfolio")
+     */
+    public function portfoo(): Response
+    {
+        return $this->render('leportfolio.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }   
     
+
+   
     
     
     
