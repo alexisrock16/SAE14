@@ -1,0 +1,20 @@
+
+
+
+SI CLONE MARCHE PAS 
+composer install
+git config --global --unset http.proxy 
+git config --global --unset https.proxy 
+
+
+
+ 
+POUR PUSH 
+
+git remote add origin https://github.com/alexisrock16/sae14 
+git add .
+git status
+
+git commit -m "Initial commit"
+git branch -M main 
+git push -u origin main 
