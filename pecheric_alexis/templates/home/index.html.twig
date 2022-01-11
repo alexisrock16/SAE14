@@ -72,7 +72,7 @@
                 
                                   }   </style>
                                 <h2 class="alt"> <span> Je suis</span> <strong><span> Alexis</span></strong> <a href="">Pecheric</a> Voici<br />
-								<span>mon site responsive </span><a href="#">contenant mon</a><span> Portfolio et ce qui me represente </span></h2>
+								<span>mon site responsive </span><a href="#">contenant mon</a><span> Portfolio et ce qui me représente </span></h2>
 								<p></p>
 							</header>
 
@@ -127,9 +127,9 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="/monportfolio" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="/monportfolio" class="image fit"><img src="images/image_4.jpg" alt="" /></a>
 										<header>
-											<h3>Créer des outils et applicationsinformatiques pour les RT (s1)</h3>
+											<h3>Créer des outils et applications informatiques pour les RT (s1)</h3>
 										</header>
 									</article>
 									<article class="item">
@@ -194,7 +194,7 @@ Je m'appelle Alexis Pecheric, je suis étudiant en BUT Reseau telecom à Roanne 
 
 		<!-- Footer pied de page  -->
 			<div id="footer">
-
+         <!-- <a  type=button onclick="aider()" value="Aide" href="/home#top" class="button scrolly">remonter</a> POUR PRESENTATION
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; PECHERIC. All rights reserved.</li>
@@ -203,13 +203,13 @@ Je m'appelle Alexis Pecheric, je suis étudiant en BUT Reseau telecom à Roanne 
 			</div>
 
 		<!-- Scripts    const TL = gsap.timeline({ repeat : 3 , repeatDelay : 0.5 });                                        -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js1/jquery.min.js"></script>
+			<script src="assets/js1/jquery.scrolly.min.js"></script>
+			<script src="assets/js1/jquery.scrollex.min.js"></script>
+			<script src="assets/js1/browser.min.js"></script>
+			<script src="assets/js1/breakpoints.min.js"></script>
+			<script src="assets/js1/util.js"></script>
+			<script src="assets/js1/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   
         <script> const titreSpans = document.querySelectorAll('h2, span, p, footer');
@@ -224,12 +224,12 @@ Je m'appelle Alexis Pecheric, je suis étudiant en BUT Reseau telecom à Roanne 
     const TL = gsap.timeline({paused: true});
 
     TL
-    .staggerFrom(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.1)
-    .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.1, '-=1')
+    .staggerFrom(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+    .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.3, '-=1')
     .from(l1, 1, {width: 0, ease: "power2.out"}, '-=2')
     .from(l2, 1, {width: 0, ease: "power2.out"}, '-=2')
     .from(logo, 0.4, {transform: "scale(0)", ease: "power2.out"}, '-=2')
-    .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.1, '-=1');
+    .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.3, '-=1');
 
     
     
