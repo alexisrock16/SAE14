@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}alexis{% endblock %}</title>
+    
+        
+        
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+         <link rel="stylesheet" href="assets/mainbase.css"/>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        
+       
+        
+        
+        
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    
+      
+            <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/home">Accueil</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/home#about">A propos</a></li>
+                    <li><a href="/monportfolio">Portfolio</a></li>
+              
+                    <li><a href="/cv">Mon cv</a></li>
+                </ul>
+                
+           
+                
+                
+                
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+        
+    
+    
+    
+    <body>
+        {% block body %}
+        
+        
+    
+          
+    
+        {% endblock %}
+    </body>
+</html>
